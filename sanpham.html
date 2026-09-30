@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+t m<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Sản phẩm — Hạnh Nguyễn</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="index.css"/>
+  <link rel="stylesheet" href="sanpham.css"/>
+</head>
+<body>
+
+
+  <header class="header">
+    <div class="logo-area">
+      <div class="logo-box">HN</div>
+      <div class="logo-text">
+        <h1>HẠNH NGUYỄN</h1>
+        <p>THIẾT BỊ TRƯỜNG HỌC & CÔNG SỞ</p>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="index.html">Trang chủ</a>
+      <a href="san-pham.html" class="active">Sản phẩm</a>
+      <a href="#">Giải pháp</a>
+      <a href="#">Dự án</a>
+      <a href="#">Giới thiệu</a>
+      <a href="#">Liên hệ</a>
+    </nav>
+
+    <div class="header-right">
+      <div class="search-box">
+        <span class="material-icons search-icon">search</span>
+        <input type="text" placeholder="Tìm sản phẩm..." class="search-input" />
+      </div>
+      <button class="icon" title="Tài khoản">
+        <span class="material-icons">person</span>
+      </button>
+      <a href="cart.html" class="cart-link" title="Giỏ hàng">
+        <span class="material-icons">shopping_cart</span>
+        <span class="cart-count" id="cartCount">0</span>
+      </a>
+      <a href="#" class="btn-quote">NHẬN BÁO GIÁ</a>
+    </div>
+  </header>
+
+  
+  <section class="page-hero">
+    <div class="breadcrumb">
+      <a href="index.html">Trang chủ</a> / <span>Sản phẩm</span>
+    </div>
+    <h1 class="page-hero__title">TẤT CẢ SẢN PHẨM</h1>
+    <p class="page-hero__desc">
+      Bàn ghế, máy tính, camera, thiết bị âm thanh và vật tư điện — 278 mặt hàng có sẵn trong kho.
+      Giá sỉ áp dụng tự động từ 20 sản phẩm.
+    </p>
+  </section>
+
+  
+  <section class="products-section">
+    <div class="products-layout">
+
+
+      <aside class="sidebar">
+        <h3 class="sidebar__title">DANH MỤC</h3>
+        <div class="sidebar__group">
+          <label><input type="checkbox"> Bàn ghế trường học <span>(85)</span></label>
+          <label><input type="checkbox"> Máy tính & thiết bị CNTT <span>(52)</span></label>
+          <label><input type="checkbox"> Camera giám sát <span>(36)</span></label>
+          <label><input type="checkbox"> Âm thanh & loa <span>(41)</span></label>
+          <label><input type="checkbox"> Dây điện & vật tư điện <span>(64)</span></label>
+        </div>
+
+        <h3 class="sidebar__title">KHOẢNG GIÁ</h3>
+        <div class="sidebar__group">
+          <label><input type="checkbox"> Dưới 1.000.000₫</label>
+          <label><input type="checkbox"> 1 – 3 triệu ₫</label>
+          <label><input type="checkbox"> 3 – 10 triệu ₫</label>
+          <label><input type="checkbox"> Trên 10 triệu ₫</label>
+        </div>
+
+        <h3 class="sidebar__title">TÌNH TRẠNG</h3>
+        <div class="sidebar__tags">
+          <span class="tag">Có sẵn kho</span>
+          <span class="tag">Đặt theo yêu cầu</span>
+          <span class="tag">Kèm lắp đặt</span>
+          <span class="tag">Có CO–CQ</span>
+        </div>
+
+        <a href="#" class="sidebar__cta">CẦN TƯ VẤN CHỌN MẪU?</a>
+      </aside>
+
+     
+      <div class="main-content">
+
+     
+        <div class="toolbar">
+          <span class="toolbar__count">Hiển thị 12 trong 24 sản phẩm</span>
+          <div class="toolbar__sort">
+            <span>Sắp xếp</span>
+            <select>
+              <option>Bán chạy nhất</option>
+              <option>Giá: thấp đến cao</option>
+              <option>Giá: cao đến thấp</option>
+              <option>Mới nhất</option>
+            </select>
+          </div>
+        </div>
+
+       
+        <div class=" product-grid" id="productGrid"></div>gi
+
+      </div>
+    </div>
+  </section>
+
+  <script src="data.js"></script>
+  <script src="sanpham.js"></script>
+</body>
+</html>
